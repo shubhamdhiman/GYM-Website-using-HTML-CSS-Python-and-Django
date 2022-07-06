@@ -1,0 +1,99 @@
+@font-face {
+    src: url(/static/fonts/Heaters.otf);
+    font-family: Heaters;
+}
+
+/* body was here */
+
+.header {
+    /* border: 2px solid red; */
+
+    position: relative;
+}
+
+/* Left starts here */
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+
+
+}
+
+.left img {
+    width: 120px;
+}
+.fire{
+    font-family:Heaters;
+    font-size:220%;
+    margin:-20px -15px;
+    }
+.fire li{display:inline-block;}
+#leftfiretext:hover{color:orange;}
+
+
+/* Mid starts here */
+.mid {
+
+    /* border: 2px solid yellow; */
+    display: block;
+    width: 33%;
+    margin: 30px 600px;
+
+
+}
+
+.navbar {
+    font-family: Heaters;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+
+}
+
+.navbar a:hover
+
+/*, a.active*/
+    {
+    color: orange;
+
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 40px;
+
+}
+
+/* Mid ends here */
+
+
+/* Right starts here */
+.right {
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: -18px;
+    font-family:Heaters;
+    font-size:150%;
+
+}
+.rightjoin li{display:inline-block;}
+
+#rjointext{font-size:140%;
+padding:0 5px;}
+
+#rjoinicon a{
+    text-decoration:none;
+    color:white;
+    font-size:80%;
+}
+#rjoinicon a:hover{color:orange;}
+/* Right ends here */
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Fire Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% comment %} source of fontawesome {% endcomment %}
+    <script src="https://kit.fontawesome.com/57a83653ec.js" crossorigin="{% static 'anonymous' %}"></script>
+
+    {% comment %} CSS base class link {% endcomment %}
+    <link rel="stylesheet" href="{% static 'CSS/base.css' %}" />
+
+    {% comment %} CSS card and body(specialy image) css file {% endcomment %}
+    
+    <link rel="stylesheet" {% block link %}href="{% static 'CSS/cardd.css'%}" {% endblock %} />
+    <link rel = "icon" href ="{% static 'images/png1.png ' %}" type = "image/x-icon">
+    
+    {% block extralink %}{% endblock extralink%}
+    {% comment %} glmorp Effect file {% endcomment %}
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <style>
+    {% comment %} header{background-color:black;} {% endcomment %}
+  </style>
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="{% static 'images/png1.png' %}" alt="error" />
+        <!-- <div class="fire">Fire Up</div> -->
+        <ul class="fire">
+          <li id="leftfiretext">Fire</li>
+          <li id="leftuptext">Up</li>
+        </ul>
+      </div>
+    
+      <!-- Middle Box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/trainers">Trainers</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+        <ul class="rightjoin">
+          <li id="rjointext">join</li>
+          <li id="rjoinicon">
+            <a href="/join"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+      {% comment %} .... {% endcomment %} {% block container %}
+      <div class="container">
+        <div class="card" data-tilt>
+          <h2>We Lift Iron</h2>
+          <a href="join" class="btn">Join Us</a>
+        </div>
+      </div>
+      <script src="{% static 'JS/vanilla-tilt.js' %}"></script>
+      {% endblock container %}
+    {% comment %} </header> {% endcomment %}
+  </body>
+</html>

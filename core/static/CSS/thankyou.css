@@ -1,0 +1,17 @@
+.thank{
+    position:absolute;
+    left:10%;
+    top:40%;
+
+}
+#thankyou{
+    font-size:340%;
+}
+#name{
+    font-size:480%;
+    color:orange;
+}
+#rest{
+    font-size:200%;
+    margin-top:20px;
+}

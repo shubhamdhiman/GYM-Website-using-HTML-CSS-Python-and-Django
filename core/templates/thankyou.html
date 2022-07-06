@@ -1,0 +1,28 @@
+{% extends 'base.html'  %}
+{% load static %}
+
+
+{% block link %}
+href="{% static 'CSS/joinu.css' %}"
+
+{% endblock link %}
+
+{% block extralink %}
+<link rel="stylesheet" href="{% static 'CSS/thankyou.css'%}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+{% endblock extralink %}
+
+
+
+{% block container %}
+<div class="thank">
+    <div>
+        <span id='thankyou'>Thankyou</span><span id='name'>  {{name}}!</span>
+    </div>
+    <div id="rest">  
+    Our team will reach to you soon.
+    </div>
+</div>
+{% endblock container %} 

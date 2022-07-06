@@ -1,0 +1,37 @@
+{% extends 'base.html'  %}
+{% load static %}
+
+
+{% block link %}
+href="{% static 'CSS/joinu.css' %}"
+{% endblock link %}
+
+{% block extralink %}
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+{% endblock extralink %}
+
+
+
+{% block container %}
+
+<div class="container" >
+    <div class="cont-title">
+        <ul class='ulconttitle'>
+            <li id="fire">Fire</li>
+            <li>up</li>
+        </ul>
+    </div>
+ <form action="" method="POST" class="formc">
+  {% csrf_token %}
+
+  {{form.as_p}}  
+  
+  <input type="submit"  value="Submit" id="btn">
+ </form>
+ 
+</div>
+
+{% endblock container %} 

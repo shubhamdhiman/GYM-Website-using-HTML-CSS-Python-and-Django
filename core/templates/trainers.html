@@ -1,0 +1,46 @@
+{% extends 'base.html'  %}
+{% load static %}
+
+
+{% block link %}
+href="{% static 'CSS/training.css' %}"
+{% endblock link %}
+
+{% block extralink %}
+{% endblock extralink%}
+
+{% block container %}
+<div class="container">
+    <div class="card" data-tilt>
+        <img src="{% static 'images/trainerb.jpg' %}" alt="error"/>
+        <img src="{% static 'images/trainer.jpg' %}" class="img-top" alt="error"/>
+        <h2 id="David">David Harington</h2>
+        <p>Professional Trainer</p>
+        <div class="links">
+            <div id='Davidlinks'>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <a href="https://www.gmail.com" id="Davidbtn" target="_blank">Email</a>
+    </div>
+    <div class="card" data-tilt>
+        <img src="{% static 'images/trainer1b.jpg' %}" alt="error"/>
+        <img src="{% static 'images/trainer1.jpg' %}" class="img-top" alt="error"/>
+        <h2 id="Emily">Emily Moore</h2>
+        <p>Professional Trainer</p>
+        <div class="links">
+            <div id="Emilylinks">
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+        </div>
+        
+        <a  id="Emilybtn"  href="https://www.gmail.com" target='_blank'>Email</a>
+        
+    </div>
+    
+</div>
+{% endblock container %} 

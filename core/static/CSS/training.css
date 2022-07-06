@@ -1,0 +1,224 @@
+@font-face {
+    src: url(/static/fonts/Heaters.otf);
+    font-family: Heaters;
+}
+
+.container {
+    width: 100%;
+    height: 75vh;
+    background-image: url(back4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 90%;
+    max-width: 300px;
+    color: #fff;
+    text-align: center;
+    margin:40px;
+    padding: 50px 35px;
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    /* background:rgba(255, 255, 255, 0.1); */
+    background:rgba(34, 34, 34, 0.5);
+    border-radius:16px;
+    box-shadow:0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(10px);
+}
+.card img{
+    width:140px;
+    /* height:140px; */
+    border-radius:50%;
+}
+.card .img-top{
+    display:none;
+    position:absolute;
+    top:15;
+    left:7.2em;
+    z-index:99;
+}
+/* .card:hover  */
+.card:hover .img-top{
+    display:inline;
+    
+}
+/* .card img:hover{
+    background-image: url(trainer3.jpg);
+    border-color:2px solid orange;
+} */
+.card h2{
+    font-family:Heaters;
+    font-size:50px;
+    font-weight:100;
+    margin:0px;
+
+}
+.card:hover h2#David{color:rgba(255, 98, 98);}
+.card:hover h2#Emily{color:rgb(39, 61, 84);}
+.card p{
+    font-family:Heaters;
+    font-size:25px;
+    margin:8px auto 20px;
+    max-width:330px;
+
+}
+.links{
+    margin:10px;
+}
+.links a{text-decoration: none;
+        font-size:20px;
+        font-weight: 250;
+        /* background:#fff; */
+        color:white;
+        padding:15px 15px;
+        /* border-radius:15px; */
+        margin:15px;
+        /* border-bottom:2px solid orange; */
+}
+#Davidlinks a:hover{
+    border-bottom:2px solid rgb(255, 98, 98);
+    color:rgb(255, 98, 98);
+}
+#Emilylinks a:hover{
+    border-bottom:2px solid rgb(39, 61, 84);
+    color:rgb(39, 61, 84);
+}
+#Davidbtn{
+    text-decoration:none;
+    display:inline-block;
+    font-family:Heaters;
+    font-size:25px;
+    font-weight:500;
+    background:#fff;
+    color:#000000;
+    padding: 2px 55px;
+    border-radius:5px;
+    margin: 30px 0 10px;
+
+}
+#Davidbtn:hover{
+    background-color:rgb(255, 98, 98);
+    color:white;
+}
+#Emilybtn{
+    text-decoration:none;
+    display:inline-block;
+    font-family:Heaters;
+    font-size:25px;
+    font-weight:500;
+    background:#fff;
+    color:#000000;
+    padding: 2px 55px;
+    border-radius:5px;
+    margin: 30px 0 10px;
+
+}
+#Emilybtn:hover{
+    background-color:rgb(39, 61, 84);
+    color:white;
+}
+/* Body */
+body {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    background: url(/static/images/gym3b.jpg);
+}
+
+
+.header {
+    /* border: 2px solid red; */
+
+    position: relative;
+}
+
+/* Left starts here */
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+
+
+}
+
+.left img {
+    width: 120px;
+}
+.fire{
+    font-family:Heaters;
+    font-size:220%;
+    margin:-20px -15px;
+    }
+.fire li{display:inline-block;}
+#leftfiretext:hover{color:orange;}
+
+
+/* Mid starts here */
+.mid {
+
+    /* border: 2px solid yellow; */
+    display: block;
+    width: 33%;
+    margin: 30px 600px;
+
+
+}
+
+.navbar {
+    font-family: Heaters;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+
+}
+
+.navbar a:hover
+
+/*, a.active*/
+    {
+    color: orange;
+
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 40px;
+
+}
+
+/* Mid ends here */
+
+
+/* Right starts here */
+.right {
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: -18px;
+    font-family:Heaters;
+    font-size:150%;
+
+}
+.rightjoin li{display:inline-block;}
+
+#rjointext{font-size:140%;
+padding:0 5px;}
+
+#rjoinicon a{
+    text-decoration:none;
+    color:white;
+    font-size:80%;
+}
+#rjoinicon a:hover{color:orange;}
+/* Right ends here */
+

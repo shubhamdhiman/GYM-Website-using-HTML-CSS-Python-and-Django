@@ -1,0 +1,67 @@
+{% extends 'base.html'  %}
+{% load static %}
+
+
+{% block link %}
+href="{% static 'CSS/service.css' %}"
+{% endblock link %}
+
+
+
+{% block container %}
+<div class="container">
+    <div class="card1">
+        <div class="boxa" id="c1box1">
+            <div class="icons">
+                <i class="fa-regular fa-snowflake"></i>
+            </div>
+            <div>Air-Conditioner
+            </div>
+        </div>
+        
+        <div class="boxa"id="c1box2">
+            <div class="icons">
+                <i class="fa-solid fa-shower"></i>
+            </div>
+            <div>
+                Shower
+            </div>
+        </div>
+        <div class="boxa"id="c1box3">
+            <div class="icons">
+                <i class="fa-solid fa-pump-soap"></i>
+            </div>
+            <div>
+                Hygiene
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="boxb"id="c2box1">
+            <div class="icons">
+                <i class="fa-solid fa-people-arrows-left-right"></i>
+            </div>
+            <div>
+                Personal Trainer
+            </div>
+        </div>
+        <div class="boxb"id="c2box2">
+            <div class="icons">
+                <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <div>
+                Latest Equipments
+            </div>
+        </div>
+        <div class="boxb"id="c2box2">
+            <div class="icons">
+                <i class="fa-regular fa-square"></i>
+            </div>
+            <div>
+                Well-Space
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock container %} 

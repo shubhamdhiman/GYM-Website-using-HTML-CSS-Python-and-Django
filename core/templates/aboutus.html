@@ -1,0 +1,36 @@
+{% extends 'base.html'  %}
+{% load static %}
+
+
+{% block link %}
+href="{% static 'CSS/aboutgym.css' %}"
+{% endblock link %}
+{% block extralink %}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+{% endblock extralink%}
+
+
+{% block container %}
+<div class="container">
+    <div class="card">
+
+        <h2 class="about">About Us</h2>
+        <div class='moving'>
+        <p class='main'>We <strong><span class="spfire"style="font-size:110%">Fire</span>up </strong>helping people live longer, happier and healthier lives for over 10 years.</p>
+
+        <p class='rest'><strong><span class='spfire'style="font-size:110%">Fire</span>up</strong> was founded in 2011 as a family owned and operated business specialising in supplying high-quality gym equipment at great prices. For more than 10 years helping customers reach their fitness goals has been at the heart of what we do and why we do it!</p>
+
+        <p class="rest"><strong><span class="spfire" style="font-size:110%">Fire</span>up</strong> has a growing 60+ awesome superstars and we owe our success to each and every of them. We know that building a positive culture is incredibly important. We believe in encouraging, supporting, challenging, learning and growing to be the best! Our flexible working solutions, gym rebates and educational opportunities create a positive work/life balance for all our employees.</p>
+    </div>
+        <p class="contact">Contact Us</p>
+        <div class="links">
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.gmail.com" target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>
+        </div>
+        
+    </div>
+    
+</div>
+{% endblock container %} 
